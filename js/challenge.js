@@ -14,7 +14,7 @@ let timer=function(){
         document.getElementById("counter").innerText = count;
         ++count;
         heartCount= 0;
-    },1e3)
+    },1000)
     }
 let interval=timer();
 
@@ -51,7 +51,8 @@ pause.addEventListener('click', function(){
         
         clearInterval(interval)
         pause.innerText = "resume"
-        document.querySelectorAll('button').forEach( button => {
+        document.querySelectorAll('button').forEach( button => { //button.id != "pause" ? button.disabled = true : button.disabled = false
+            //why cant i one line this. stupid java script
             
                 if (button.id != "pause") {
                     button.disabled = true
