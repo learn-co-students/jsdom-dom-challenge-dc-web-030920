@@ -1,4 +1,4 @@
-
+//who even reads these
 const plus = document.getElementById('plus'),
     minus = document.getElementById('minus'),
     heart = document.getElementById('heart'),
@@ -46,7 +46,7 @@ heart.addEventListener('click', function(){
 })
 
 pause.addEventListener('click', function(){
-    num = document.getElementById('counter').innerText
+    // num = document.getElementById('counter').innerText dont need anymore
     if (pause.innerText == "pause") {
         
         clearInterval(interval)
@@ -75,3 +75,5 @@ submit.addEventListener('click', function(event){
     pNode.innerText = document.getElementById('comment-input').value;
     commentNode.appendChild(pNode);
 })
+
+//whats up?
